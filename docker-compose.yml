@@ -1,0 +1,57 @@
+version: "1.0"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      VITE_API_URL: http://localhost:5000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - my_network
+
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+    environment:
+      PORT: 5000
+      JWT_SECRET: mysecretkey
+      NODE_ENV: development
+      MAILTRAP_TOKEN: de869588cb715776ed3b1fd242230c4a
+      MAILTRAP_ENDPOINT: https://send.api.mailtrap.io/
+      CLIENT_URL: http://localhost:3000
+      DB_HOST: database
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASS: root
+      DB_NAME: thefilm
+    networks:
+      - my_network
+
+  database:
+    image: mysql:8
+    ports:
+      - "2306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: thefilm
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./sql/thefilm.sql:/docker-entrypoint-initdb.d/thefilm.sql
+    networks:
+      - my_network
+
+volumes:
+  db_data:
+
+networks:
+  my_network:

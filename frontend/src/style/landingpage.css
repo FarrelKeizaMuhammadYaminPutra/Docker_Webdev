@@ -1,0 +1,728 @@
+.myBG{
+    height: 100vh;
+    background: #333;
+    background-size: cover;
+}
+
+
+
+
+.input-wrapper{
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
+}
+
+
+input.landing-page{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 5px;   
+}
+
+input:focus{
+    outline: none;
+}
+
+.intro{
+    height: 400vh;
+    display: flex;
+    justify-content: flex-start; /* Mengatur elemen ke kiri */
+    align-items: start; /* Mengatur elemen ke atas */
+    /* padding-left: 10px;  */
+    padding-right: 100px;
+    background: #333;
+}
+
+.intro .container {
+    max-width: 100%; /* Memastikan container mengambil lebar penuh */
+}
+
+.intro .dropdown {
+    margin-bottom: 20px; /* Menambahkan jarak antar dropdown */
+}
+
+.intro .g-3 {
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 2px 2px black;
+    letter-spacing: 3px;
+}
+
+.home{
+    height: auto;
+    background: #333;
+    background-size: cover;
+}
+
+/* .movieWRAPPER{
+
+} */
+
+.movieIMG{
+    width: 210px;
+    height: 210px;
+    /* background-color: black; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.actorIMG{
+    max-width: 100px; /* Mengatur lebar maksimum card lebih kecil */
+    height: auto; /* Tinggi card mengikuti konten */
+}
+
+.actor-img {
+    width: 100%; /* Gambar memenuhi lebar penuh card */
+    height: 150px; /* Menyetel tinggi gambar */
+    object-fit: cover; /* Memastikan gambar terpotong secara proporsional */
+}
+
+
+.images {
+    height: 210px;
+    width: 199px;
+}
+
+.dropdown-custom {
+    background-color: #000000 !important; /* Latar belakang hitam */
+    color: #ffffff !important; /* Teks putih */
+    border: 1px solid #ffffff; /* Border putih untuk membedakan */
+}
+
+.dropdown-custom:hover,
+.dropdown-custom:focus {
+    background-color: #333333 !important; /* Latar belakang abu-abu gelap saat hover atau fokus */
+    color: #ffffff !important; /* Teks tetap putih */
+    border: 1px solid #ffffff; /* Border tetap putih */
+}
+
+.dropdown-menu {
+    background-color: #ffffff !important; /* Latar belakang menu dropdown hitam */
+    color: #ffffff !important; /* Teks item dropdown putih */
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #333333 !important; /* Latar belakang item saat hover/fokus */
+    color: #ffffff !important; /* Teks tetap putih */
+}
+
+.dropdown-custom, 
+.introButton button {
+    width: 50%; /* Mengatur elemen menjadi selebar container */
+    max-width: 130px; /* Membatasi lebar maksimal agar konsisten */
+}
+
+.dropdown-custom .dropdown-toggle {
+    width: 50%; /* Mengatur dropdown toggle selebar container */
+    text-align: left; /* Mengatur teks dropdown agar rata kiri */
+}
+
+.banner{
+    width: 100%;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .movieCardSearch {
+    flex: 0 0 20%;
+    margin-bottom: 90px;
+  }
+  
+
+
+
+.movieCardSearch img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movieCardSearch h5 {
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.movieCardSearch a {
+  text-decoration: none; /* Menghilangkan underline */
+  color: inherit; /* Menggunakan warna teks default */
+}
+
+.movieCardSearch a:focus, 
+.movieCardSearch a:hover, 
+.movieCardSearch a:active {
+  text-decoration: none; /* Pastikan tidak ada underline pada fokus atau hover */
+  outline: none; /* Menghilangkan garis biru pada fokus */
+}
+
+
+
+
+/* .hero {
+    margin-bottom: 20px;
+} */
+
+.anime-card {
+    position: relative;
+    width: 110%;
+    height: 100%; /* Sesuaikan tinggi sesuai kebutuhan */
+    background: url('../assets/bgcnth.jpeg') no-repeat left center/cover;
+    border-radius: 20px;
+    /* background-size: cover; */
+    /* background-position: left center;
+    background-repeat: no-repeat; */
+    overflow: hidden;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center; 
+    padding-left: 20px;
+}
+
+.anime-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang hitam transparan untuk meningkatkan keterbacaan teks */
+    z-index: 1;
+}
+
+.anime-card .content {
+    position: relative;
+    z-index: 2; /* Memastikan konten berada di atas overlay */
+}
+
+.anime-card .logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.anime-card h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.anime-card .tag {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.anime-card .tag li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.anime-card p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.anime-card .btn-block {
+    display: flex;
+    gap: 15px;
+}
+
+.cus-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 35%;
+}
+
+.cus-btn.primary {
+    display: inline-block;
+    background-color: #1dbf73;
+}
+
+.cus-btn.filter {
+    display: inline-block;
+    background-color: transparent;
+    display: flex; /* Ubah ke flex untuk display */
+    align-items: center; /* align-items menggunakan kebab-case */
+    justify-content: center; /* justify-content juga menggunakan kebab-case */
+    padding: 10px 20px; /* Tidak perlu tanda kutip di sekitar nilai */
+    border-radius: 10px; /* border-radius menggunakan kebab-case */
+    border: 2px solid #e60f0f;
+    margin-top: 18px;
+    color: white;
+    text-decoration: none; /* text-decoration menggunakan kebab-case */
+    width: 150px; /* Tidak perlu tanda kutip */
+    font-family: 'Monaco, monospace'; /* Jika Anda ingin font monospace */
+}
+
+
+.cus-btn.primary:hover {
+    background-color: #17a867;
+}
+
+.cus-btn.sec {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.cus-btn.sec:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cus-btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.card-link {
+    text-decoration: none;
+    outline: none;
+  }
+  
+.card-link:focus, .card-link:hover {
+    text-decoration: none;
+    outline: none;
+}
+  
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white !important;
+}
+.card-text {
+    font-size: 1rem;
+    color: white;
+}
+
+.form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #444;
+    border-color: #666;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffcc00;
+    border: none;
+}
+
+.btn-link {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.myDP{
+    height: -vh;
+    background: black;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.review-title {
+    color: #FFD700; /* Warna emas untuk menonjolkan */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Tambahkan bayangan untuk memberikan efek 3D */
+    font-size: 40px; /* Ukuran lebih besar */
+    font-weight: bold; /* Tebal */
+    border-bottom: 3px solid #FFD700; /* Tambahkan garis bawah */
+    padding-bottom: 10px; /* Jarak di bawah teks */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Huruf kapital semua */
+}
+
+.mySearch{
+    height: 500vh;
+    background: black;
+    background-size: cover;
+}
+
+.slider-container {
+    width: 80%; /* Menentukan lebar slider, sesuaikan jika perlu */
+    margin: 0 auto; /* Mengatur agar slider berada di tengah */
+    display: flex;
+    justify-content: center; /* Menjaga elemen di tengah secara horizontal */
+    align-items: center; /* Pastikan elemen sejajar vertikal di tengah */
+    
+}
+
+
+.tag-unstyled {
+    display: flex; /* Mengatur elemen di dalam ul berjajar secara horizontal */
+    flex-wrap: wrap; /* Agar elemen bisa turun ke baris berikutnya jika terlalu panjang */
+    gap: 10px; /* Jarak antara setiap item */
+    list-style-type: none; /* Menghilangkan bullet default */
+    padding: 0; /* Menghilangkan padding default pada ul */
+    margin: 0; /* Menghilangkan margin default pada ul */
+}
+
+.tag-unstyled li {
+    margin: 0; /* Menghilangkan margin default pada li */
+    /* padding: 2px 6px; Menambahkan padding pada setiap li */
+}
+
+
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+    
+}
+
+.categorie-item {
+    background-color: #1e1e1e; /* Warna latar belakang card */
+    border-radius: 20px; /* Sudut melengkung */
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none; /* Hilangkan underline pada teks */
+    transition: box-shadow 0.3s ease; /* Animasi transisi untuk bayangan */
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0); /* Efek bayangan default */
+    margin-bottom: 20px;
+  }
+  
+.categorie-item:hover {
+    box-shadow: 0 0 25px 10px rgba(0, 255, 0, 0.5); /* Bayangan hijau saat di-hover */
+  }
+  
+.categorie-image {
+    width: 80px; /* Ukuran gambar thumbnail */
+    height: 80px; 
+    border-radius: 12px; /* Membulatkan sudut gambar */
+  }
+  
+.content {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+.h-36 {
+    font-size: 2.0rem; /* Ukuran teks yang besar */
+    font-weight: bold; /* Menebalkan judul */
+  }
+  
+.color-white {
+    color: #ffffff; /* Warna teks putih */
+  }
+  
+.color-medium-gray {
+    color: #b0b0b0; /* Warna teks abu-abu */
+  }
+  
+.p-40 {
+    padding: 40px;
+  }
+  
+/* Style untuk ikon profil */
+.dropdown-profile {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-icon {
+    font-size: 1.8rem;
+    color: #e5e5e5;
+    transition: color 0.3s;
+}
+
+.profile-icon:hover {
+    color: #ffffff;
+}
+
+/* Style untuk menu dropdown */
+.dropdown-menu-custom {
+    position: absolute;
+    top: 2.5rem; /* Jarak dari ikon profil */
+    right: 0;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    color: #e5e5e5;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.dropdown-item:hover {
+    background-color: #555;
+    color: #ffffff;
+}
+
+
+.filter-block{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.dropdown-menu {
+    background-color: #000000; /* Warna latar hitam */
+    color: white; /* Warna teks putih */
+}
+
+.form-check-input {
+    background-color: #ffffff; /* Warna latar checkbox putih */
+    border: 1px solid #ffffff; /* Warna border putih */
+}
+
+.slider-area {
+    position: relative;
+    height: 450vh;
+    overflow: hidden;
+}
+
+
+
+.hero-slider {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    position: relative;
+    text-align: left;
+}
+  
+.single-slider {
+  height: 100vh; /* Pastikan tinggi slider sesuai */
+  position: relative; /* Agar overlay dan konten bisa diatur */
+  overflow: hidden; /* Menghindari overflow */
+}
+
+.single-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  position: absolute; /* Agar gambar tetap di belakang konten */
+  top: 0;
+  left: 0;
+  z-index: 0; /* Gambar di belakang overlay dan konten */
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay gelap untuk meningkatkan keterbacaan */
+  z-index: 1; /* Overlay di bawah konten tetapi di atas gambar */
+}
+
+.slider-content {
+  position: absolute; /* Mengatur posisi relatif terhadap parent */
+  bottom: 20px; /* Mengatur jarak dari bawah */
+  left: 20px; /* Mengatur jarak dari kiri */
+  z-index: 2; /* Mengatur agar tetap di atas overlay */
+  text-align: left; /* Mengatur teks agar rata kiri */
+  color: white; /* Mengubah warna teks menjadi putih */
+  padding: 10px; /* Tambahkan padding jika diperlukan */
+}
+
+.title {
+  font-size: 10vw; 
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sub-title {
+  font-size: 1.25rem; 
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+
+  
+.btn-danger {
+    background-color: #e50914;
+    border: none;
+}
+  
+.btn-danger:hover {
+    background-color: #b50710;
+}
+ 
+.slick-prev, .slick-next {
+    color: red !important; /* Warna panah menjadi merah */
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2rem !important; /* Sesuaikan ukuran jika diperlukan */
+}
+
+.slick-prev {
+    left: 5px !important; /* Sesuaikan jarak dari tepi kiri */
+}
+
+.slick-next {
+    right: 5px !important; /* Sesuaikan jarak dari tepi kanan */
+}
+
+.play-button {
+    background-color: #28a745; /* Warna hijau */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #218838; /* Warna hijau yang lebih gelap saat hover */
+}
+
+
+.icons {
+  color: white; /* Adjust color as needed */
+  margin-left: 15px; /* Space between icons */
+  font-size: 1.5rem; /* Icon size */
+  cursor: pointer; /* Show pointer cursor */
+}
+
+.dropdown-toggle::after {
+  display: none; /* Hide default dropdown arrow */
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+    max-width: 250px; /* Sesuaikan untuk tampilan tablet atau ponsel */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  img {
+    width: 100%;
+    max-width: 300px; /* Sesuaikan untuk tampilan tablet landscape */
+  }
+}
+
+@media (min-width: 1025px) {
+  img {
+    width: 100%;
+    max-width: 1500px; /* Sesuaikan untuk tampilan desktop */
+  }
+}
+
+@media (max-width: 480px) {
+    .filter {
+        font-size: 14px; /* Atur ukuran font */
+    }
+    .movie-container img {
+        max-width: 100%; /* Pastikan gambar tidak melampaui batas */
+        height: auto; /* Sesuaikan tinggi dengan lebar */
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Overlay dengan transparansi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Pastikan berada di atas elemen lain */
+}
+
+.modal-content {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 800px; /* Atur ukuran maksimum */
+    width: 90%;
+    position: relative;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 450px; /* Atur tinggi iframe */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 1001;
+}

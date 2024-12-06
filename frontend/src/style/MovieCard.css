@@ -1,0 +1,135 @@
+.movie-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.movie-cards h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.movie-cards h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Sesuaikan jarak garis dengan teks */
+    left: 0;
+    width: 99%;
+    height: 3px;
+    background-color: white; /* Warna garis bawah */
+}
+.card-list {
+    display: flex;
+    /* gap: 1px; */
+    overflow-x: scroll;
+    padding: 10px 0;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list .card {
+    width: 150px;
+    flex-shrink: 0; /* Menambahkan ini untuk mencegah card mengecil saat ada banyak elemen */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.card-list .card img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-list .card:hover img {
+    transform: scale(1.05);
+}
+
+.card-list .card p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.card-list .card .content {
+    position: absolute;
+    bottom: 0px; 
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang hitam semi-transparan */
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Melengkungkan sudut bawah */
+}
+.card-list .card .content h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-list .card .content button {
+    margin-top: 5px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+.card-list .card .content button:hover {
+    background-color: #d40813;
+}
+
+.see-more {
+  text-align: right; /* Mengatur teks ke sebelah kanan */
+  margin-top: 7px; /* Margin atas */
+  margin-right: 15px; /* Margin kanan */
+}
+
+.see-more .see-more-button {
+  background-color: #f00; /* Warna latar belakang merah */
+  color: white; /* Warna teks putih */
+  padding: 0.5rem 1rem; /* Padding vertikal dan horizontal */
+  border-radius: 9999px; /* Sudut bulat penuh */
+  text-align: center; /* Teks di tengah */
+  display: inline-block; /* Menjadikan tombol sebagai elemen blok inline */
+  text-decoration: none; /* Menghapus garis bawah */
+  font-size: 0.875rem; /* Ukuran font */
+}
+
+
+.see-more-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #e50914;
+  border: 2px solid #e50914;
+  padding: 5px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.see-more-link:hover {
+  background-color: #d40813;
+  color: white;
+  border-color: #d40813;
+}

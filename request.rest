@@ -1,0 +1,34 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJOYWlsYSIsImVtYWlsIjoibmFpbGFAZ21haWwuY29tIiwiaWF0IjoxNzI1ODU0NDYyLCJleHAiOjE3MjU4NTQ0Nzd9.iDTFkSMogcVLOeVmBmr_GV2iNjj47-NflyhBTu47gIE
+### 
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+    "email": "enderisgod96@gmail.com",
+    "name": "Farrel",
+    "password": "Farrel77!@alkjskasj"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "enderisgod96@gmail.com",
+    "password": "Farrel77!@alkjskasj"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
+
+### 
+POST http://localhost:5000/api/auth/verify-email
+Content-Type: application/json
+
+{
+    "code": "911539"
+}

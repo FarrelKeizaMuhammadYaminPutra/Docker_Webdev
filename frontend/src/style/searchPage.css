@@ -1,0 +1,127 @@
+/* General Container for Search Page */
+.mySearch {
+  padding: 20px;
+  min-height: 1500vh;
+  color: white;
+}
+
+/* Filter Box Style */
+.filter {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  width: 220px; /* Membatasi lebar box */
+  /* height: 200px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan efek shadow */
+  margin-top: 75px;
+}
+
+.filter h4 {
+  color: #fff;
+  font-size: 20px; /* Perkecil ukuran font judul */
+  margin-bottom: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Filter DropDown */
+.dropdown-toggle {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  font-size: 16px; /* Ukuran font yang lebih kecil */
+  width: 200%; /* Lebar dropdown menyesuaikan box */
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Panah sejajar ke kanan */
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  margin-left: 8px;
+}
+
+.dropdown-menu {
+  background-color: #222;
+  border: 1px solid #555;
+  width: 300%; /* Sesuaikan dengan lebar dropdown parent */
+  max-height: 300px; /* Batasi tinggi dropdown agar tidak terlalu panjang */
+  overflow-y: auto; 
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+}
+
+.cus-btn.primary {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cus-btn.primary:hover {
+  background-color: #218838;
+}
+
+/* Adjusting Movie Container for Consistent Sizing */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-container .text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-container img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-container img:hover {
+  transform: scale(1.05); /* Adds zoom effect */
+}
+
+.movie-container h5 {
+  color: white;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold; /* Boldkan teks title */
+  text-decoration: none; /* Pastikan judul tidak memiliki garis bawah */
+}
+
+/* Tambahkan aturan ini untuk elemen Link */
+.movie-container a {
+  text-decoration: none; /* Hilangkan garis bawah pada link */
+  color: inherit; /* Warna link mewarisi warna teks */
+}
+
+.movie-container a:hover {
+  color: #28a745; /* Warna teks berubah saat hover */
+}
+
+
+.movie-container p {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}

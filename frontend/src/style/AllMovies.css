@@ -1,0 +1,50 @@
+.all-movies-page {
+  padding: 40px;
+  background-color: #000;
+  color: white;
+}
+
+.all-movies-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.all-movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.movie-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card img {
+  width: 100%; /* Pastikan gambar memenuhi container */
+  height: 300px; /* Atur tinggi gambar agar konsisten */
+  object-fit: cover; /* Menghindari distorsi gambar */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.movie-card h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
