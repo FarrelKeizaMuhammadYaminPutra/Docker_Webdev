@@ -13,7 +13,6 @@ services:
       - backend
     networks:
       - my_network
-    mem_limit: 128m
 
   backend:
     build:
@@ -37,7 +36,6 @@ services:
       DB_NAME: thefilm
     networks:
       - my_network
-    mem_limit: 128m
 
   database:
     image: mysql:8
@@ -51,7 +49,6 @@ services:
       - ./sql/thefilm.sql:/docker-entrypoint-initdb.d/thefilm.sql
     networks:
       - my_network
-    mem_limit: 128m
 
 volumes:
   db_data:

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/users`;
 
 const Users = () => {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
@@ -25,7 +26,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/users");
+        const response = await axios.get(API_URL);
         const usersWithStatus = response.data.users.map((user) => ({
           ...user,
           status: user.isVerified ? "Active" : "Inactive",
